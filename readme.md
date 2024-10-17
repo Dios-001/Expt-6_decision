@@ -14,6 +14,105 @@ This repository contains eight C++ programs that demonstrate the use of decision
    - [Program 6: Reverse Star Pattern](#program-6-reverse-star-pattern)
    - [Program 7: Star Pattern](#program-7-star-pattern)
    - [Program 8: Star Pyramid](#program-8-star-pyramid)
+  
+     # Algorithms
+
+## Password Authenticator
+
+### Algorithm
+
+1. **Start.**  
+2. **Initialize:**  
+   - Set `pwd = 8761` (this is the correct password).  
+   - Declare a variable `u_pwd` to store user input.  
+3. **Input:**  
+   - Display the message: `"Enter password: "`.  
+   - Store user input in the `u_pwd` variable.  
+4. **While Loop:**  
+   - **Condition:** Run the loop while `pwd > 0`.
+     - If `u_pwd` is **not equal** to `pwd`:
+       - Display: `"Password is incorrect"`.
+       - Display: `"Enter password again: "`.
+       - Accept the new input and store it in `u_pwd`.
+     - **Else:**
+       - Display: `"Password is correct"`.
+       - Break the loop.  
+5. **End.**
+
+---
+
+## Half Pyramid
+
+### Algorithm
+
+1. **Start.**  
+2. **Declare Variables:**  
+   - `i` and `j` for loop counters.  
+3. **Outer Loop:**  
+   - Initialize `i = 1`.  
+   - **Condition:** Run the loop while `i <= 5`.
+   - Increment `i` by 1 after each iteration.
+4. **Inner Loop (Nested):**  
+   - Initialize `j = 1`.  
+   - **Condition:** Run the loop while `j <= i`.
+   - Increment `j` by 1 after each iteration.
+5. **Inside Inner Loop:**  
+   - Display `"* "` (a star followed by a space) on the same line.
+6. After the inner loop completes, move to the next line using `endl`.
+7. Repeat until the outer loop completes.
+8. **End.**
+
+---
+
+## Inverted Half Pyramid
+
+### Algorithm
+
+1. **Start.**  
+2. **Initialize:**  
+   - Set `k = 1`.  
+   - Declare variables `i` and `j` for loop counters.  
+3. **Outer Loop:**  
+   - Initialize `i = 1`.  
+   - **Condition:** Run the loop while `i <= 5`.  
+   - Increment `i` by 1 after each iteration.  
+4. **Inner Loop (Nested):**  
+   - Initialize `j = 1`.  
+   - **Condition:** Run the loop while `j <= 5`.  
+   - Increment `j` by 1 after each iteration.  
+5. **Inside Inner Loop:**  
+   - If `j >= k`, print a `'*'`.  
+   - Else, print a space.  
+6. After the inner loop completes, move to the next line.  
+7. Decrement `k` by 1 to shift the starting position of stars leftward in the next row.  
+8. Repeat until the outer loop completes.  
+9. **End.**
+
+---
+
+## Floyd Series
+
+### Algorithm
+
+1. **Start.**  
+2. **Declare Variables:**  
+   - `i`, `j`, and `k`.  
+   - Initialize `k = 1`.  
+3. **Outer Loop:**  
+   - Initialize `i = 1`.  
+   - **Condition:** Run the loop while `i <= 5`.  
+   - Increment `i` by 1 after each iteration.  
+4. **Inner Loop (Nested):**  
+   - Initialize `j = 1`.  
+   - **Condition:** Run the loop while `j <= i`.  
+   - Increment `j` by 1 after each iteration.  
+5. **Inside Inner Loop:**  
+   - Display the value of `k` followed by a space.  
+   - Increment `k` by 1.  
+6. After the inner loop completes, move to the next line using `endl`.  
+7. Repeat until the outer loop completes.  
+8. **End.**
+
 
 ## Introduction
 
